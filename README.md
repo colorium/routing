@@ -1,1 +1,5 @@
-# Colorium Routing Component
+# Simple URI router
+
+## Install
+
+`composer require colorium/routing`
