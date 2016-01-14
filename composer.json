@@ -1,0 +1,22 @@
+{
+  "name": "colorium/routing",
+  "type": "library",
+  "description": "Colorium Routing Component",
+  "homepage": "https://github.com/colorium/routing",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aymeric Assier",
+      "email": "aymeric.assier@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Colorium\\Routing\\": "/src/Colorium/Routing/"
+    }
+  }
+}
