@@ -1,8 +1,10 @@
 <?php
 
-namespace Colorium\Routing;
+namespace Colorium\Routing\Contract;
 
-interface Routable
+use Colorium\Routing\Route;
+
+interface RouterInterface
 {
 
     /**

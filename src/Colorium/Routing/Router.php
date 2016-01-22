@@ -12,7 +12,7 @@ use Colorium\Runtime\Annotation;
  * - uri : relative url (/errors)
  * - query : method + uri (GET /errors)
  */
-class Router implements Routable
+class Router implements Contract\RouterInterface
 {
 
     /** @var Route[] */
@@ -76,11 +76,11 @@ class Router implements Routable
      * Mount router under prefix query
      *
      * @param $prefix
-     * @param Routable $router
+     * @param RouterInterface $router
      * @param array $meta
      * @return $this
      */
-    public function mount($prefix, Routable $router, array $meta = [])
+    public function mount($prefix, RouterInterface $router, array $meta = [])
     {
         $prefix = '/' . trim($prefix, '/');
         foreach($router->routes() as $route) {
