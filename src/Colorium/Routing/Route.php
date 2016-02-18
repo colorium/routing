@@ -17,7 +17,7 @@ class Route
 	/** @var array additional data (lang => en) */
 	public $meta = [];
 
-	/** @var callable resource to execute (\App\Foo::bar) */
+	/** @var mixed resource to execute (\App\Foo::bar) */
 	public $resource;
 
 	/** @var array params extracted from input uri using regex (bar => 42) */
@@ -40,6 +40,15 @@ class Route
 		$this->meta = $meta;
 
 		$this->compiled = $uri;
+	}
+
+
+	/**
+	 * Clone route
+	 */
+	public function __clone()
+	{
+		$this->resource = clone $this->resource;
 	}
 
 }

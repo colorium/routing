@@ -2,6 +2,7 @@
 
 namespace Colorium\Routing;
 
+use Colorium\Routing\Contract\RouterInterface;
 use Colorium\Runtime\Annotation;
 
 /**
